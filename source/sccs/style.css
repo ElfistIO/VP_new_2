@@ -163,6 +163,19 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   height: 50px;
+  position: relative;
+}
+
+.info .info_item_logo {
+  width: 68px;
+}
+
+.info .info_item_logo_img {
+  width: 68px;
+  height: 141px;
+  position: absolute;
+  top: -75px;
+  left: 0;
 }
 
 .info .info_item_title {
@@ -292,5 +305,37 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 40px;
   font-family: "Muller Ultra Light";
   color: #484747;
+}
+
+.info .info_item_basket {
+  width: 68px;
+  position: relative;
+}
+
+.info .info_item_basket .info_item_basket_back {
+  background-color: #40ced2;
+  border-radius: 0 0 5px 5px;
+  width: 68px;
+  height: 122px;
+  position: absolute;
+  top: -107px;
+}
+
+.info .info_item_basket .info_item_basket_back .info_item_basket_text {
+  font-size: 12px;
+  font-family: "Segoe UI";
+  color: white;
+  line-height: 1.2;
+  text-align: left;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  text-align: right;
+  margin-left: -30px;
+}
+
+.info .info_item_basket .info_item_basket_back .info_item_basket_img {
+  position: absolute;
+  top: 84px;
+  left: 15px;
 }
 /*# sourceMappingURL=style.css.map */

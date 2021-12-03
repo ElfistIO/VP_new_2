@@ -77,6 +77,17 @@ $width-site: 1170px;
   justify-content: space-between;
   align-items: center;
   height: 50px;
+  position: relative;
+  .info_item_logo {
+    width: 68px;
+  }
+  .info_item_logo_img {
+    width: 68px;
+    height: 141px;
+    position: absolute;
+    top: -75px;
+    left: 0;
+  }
   .info_item_title {
     font-size: 26px;
     font-family: "Muller Regular";
@@ -175,6 +186,33 @@ $width-site: 1170px;
       font-size: 40px;
       font-family: "Muller Ultra Light";
       color: rgb(72, 71, 71);
+    }
+  }
+  .info_item_basket {
+    width: 68px;
+    position: relative;
+    .info_item_basket_back {
+      background-color: rgb(64, 206, 210);
+      border-radius: 0 0 5px 5px;
+      width: 68px;
+      height: 122px;
+      position: absolute;
+      top: -107px;
+      .info_item_basket_text {
+        font-size: 12px;
+        font-family: "Segoe UI";
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        text-align: left;
+        transform: rotateZ(90deg);
+        text-align: right;
+        margin-left: -30px;
+      }
+      .info_item_basket_img {
+        position: absolute;
+        top: 84px;
+        left: 15px;
+      }
     }
   }
 }
