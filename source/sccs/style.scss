@@ -20,7 +20,7 @@
 }
 
 @font-face {
-  font-family: "Muller UltraLight";
+  font-family: "Muller Ultra Light";
   src: url(../../fonts/muller/MullerUltraLight.ttf) format("truetype");
 }
 
@@ -122,5 +122,59 @@ $width-site: 1170px;
     border-color: rgb(64, 206, 210);
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0);
+  }
+  .info_item_city {
+    display: flex;
+    flex-direction: column;
+    .info_item_city_box {
+      display: flex;
+      align-items: center;
+      .info_item_city_text {
+        font-size: 12px;
+        font-family: "Segoe UI";
+        color: rgb(166, 166, 166);
+        line-height: 1.2;
+        margin-right: 6px;
+        margin-bottom: 4px;
+      }
+      .info_item_city_line {
+        height: 1px;
+        width: 100px;
+        background-color: rgb(135, 135, 135);
+        opacity: 0.2;
+      }
+      .info_item_city_select {
+        font-size: 14px;
+        font-family: "Segoe UI";
+        color: rgb(127, 127, 127);
+        line-height: 1.2;
+        width: 100%;
+      }
+    }
+    .pointer {
+      width: 14px;
+      height: 19px;
+      margin-right: 17px;
+    }
+  }
+  .info_item_phone {
+    align-items: baseline;
+    padding-top: 10px;
+    .phone {
+      margin-right: 9px;
+      width: 10px;
+      height: 29px;
+    }
+    .info_item_phone_text {
+      font-size: 20px;
+      font-family: "Muller Ultra Light";
+      color: rgb(72, 71, 71);
+      margin-right: 10px;
+    }
+    .info_item_phone_text span {
+      font-size: 40px;
+      font-family: "Muller Ultra Light";
+      color: rgb(72, 71, 71);
+    }
   }
 }
