@@ -34,7 +34,14 @@
 $width-site: 1170px;
 
 .wrapper {
+  min-height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-page {
+  flex: 1 1 auto;
 }
 
 .container {
