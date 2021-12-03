@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  src: url(../../fonts/segoeUI/SegoeUI-Light.ttf) format("truetype");
+  src: url(../../fonts/segoeUI/SegoeUI-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Muller Regular";
+  src: url(../../fonts/muller/MullerRegular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Muller Medium";
+  src: url(../../fonts/muller/MullerMedium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Muller Light";
+  src: url(../../fonts/muller/MullerLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Muller UltraLight";
+  src: url(../../fonts/muller/MullerUltraLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Muller Bold";
+  src: url(../../fonts/muller/MullerBold.ttf) format("truetype");
+}
+/*# sourceMappingURL=fonts.css.map */
