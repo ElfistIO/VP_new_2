@@ -1,0 +1,234 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  src: url(../../fonts/segoeUI/SegoeUI-Light.ttf) format("truetype");
+  src: url(../../fonts/segoeUI/SegoeUI-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Muller Regular";
+  src: url(../../fonts/muller/MullerRegular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Muller Medium";
+  src: url(../../fonts/muller/MullerMedium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Muller Light";
+  src: url(../../fonts/muller/MullerLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Muller UltraLight";
+  src: url(../../fonts/muller/MullerUltraLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Muller Bold";
+  src: url(../../fonts/muller/MullerBold.ttf) format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input:-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.top_header {
+  background-color: #515151;
+  -webkit-box-shadow: 0px 10px 25px 0px rgba(81, 81, 81, 0.3);
+          box-shadow: 0px 10px 25px 0px rgba(81, 81, 81, 0.3);
+  margin-bottom: 41px;
+}
+
+.top_header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 41px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 83px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.top_header .menu .menu_item {
+  font-size: 14px;
+  font-family: "Segoe UI";
+  color: rgba(255, 255, 255, 0.302);
+  line-height: 1.2;
+  text-align: right;
+}
+
+.top_header .menu .menu_dot {
+  width: 2px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.302);
+}
+
+.top_header .menu .menu_item:hover {
+  color: white;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+.info .info_item_title {
+  font-size: 26px;
+  font-family: "Muller Regular";
+  color: #4e4e4e;
+  line-height: 1.2;
+  text-align: right;
+}
+
+.info .info_item_subtitle {
+  font-size: 14px;
+  font-family: "Segoe UI";
+  color: #8d8f8c;
+  line-height: 1.2;
+  text-align: right;
+}
+
+.info .info_item_search {
+  height: 100%;
+  width: 292px;
+  position: relative;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 10px 25px 0px rgba(167, 167, 167, 0.2);
+          box-shadow: 0px 10px 25px 0px rgba(167, 167, 167, 0.2);
+}
+
+.info .info_item_search .input {
+  font-size: 14px;
+  font-family: "Muller Regular";
+  color: #7f7f7f;
+  position: absolute;
+  top: 17px;
+  left: 28px;
+}
+
+.info .info_item_search input::-webkit-input-placeholder {
+  line-height: normal !important;
+}
+
+.info .info_item_search .search {
+  position: absolute;
+  top: 15px;
+  right: 17px;
+  width: 18px;
+  height: 18px;
+}
+
+.info .info_item_search:hover {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #40ced2;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.Прямоугольник__скругл__углы_1 {
+  border-radius: 4px;
+  background-color: #515151;
+  opacity: 0.2;
+  position: absolute;
+  left: 712px;
+  top: 431px;
+  width: 336px;
+  height: 104px;
+  z-index: 293;
+}
+/*# sourceMappingURL=style.css.map */
