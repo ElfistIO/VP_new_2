@@ -441,3 +441,103 @@ h1, h2, h3, h4, h5, h6 {
 .telephone__link span {
   font-size: 40px;
 }
+
+/*--------------SLIDER ----------------------------------------------------------------------------------*/
+
+.main-page__slider {
+  margin: 25px 0px 0px 0px;
+}
+.slider {
+}
+.slider__container {
+}
+.slider__main {
+  position: relative;
+  max-width: 750px;
+  
+}
+.slider__main img {
+  object-fit: cover;
+  
+}
+.slider__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 38px 45px;
+}
+.slider__item {
+  color: #ffffff;
+  font-style: normal;
+  letter-spacing: normal;
+  position: relative;
+  
+}
+.slider__title {
+  font-family: "Muller Bold";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 16px ;
+}
+.slider_text {
+  font-family: "Segoe UI";
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+.slider__button {
+  display: block;
+  width: 165px;
+  height: 53px;
+  color: #4e4e4e;
+  background-color: #ffffff;
+  font-family: "Muller Medium";
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 4px;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: 1.4px;
+  line-height: normal;
+  padding: 19px 0px;
+}
+
+.previous, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 151px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 24px 14px 26px 10px;
+  width: 33px;
+  height: 64px;
+  
+  color: #ffffffad;
+  transition: 0.6s ease;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+
+}
+.next {
+  right: 0;
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  padding: 24px 9px 26px 15px;
+}
+.previous:hover,
+.next:hover {
+  background-color: #4e4e4e9a;
+  color: #40ced2;
+}
+
+.item {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+      opacity: 0.4
+  }
+  to {
+      opacity: 1
+  }
+}
