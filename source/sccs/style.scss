@@ -221,6 +221,21 @@ $width-site: 1170px;
         left: 15px;
       }
     }
+    .info_item_basket_number {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      font-size: 12px;
+      font-family: "Muller Bold";
+      color: rgb(72, 71, 71);
+      line-height: 1.2;
+      text-align: center;
+      top: 70px;
+      left: 31px;
+      padding-top: 8px;
+    }
   }
 }
 /*----------------FOOTER-------------------------------------------------------------------------*/

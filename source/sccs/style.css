@@ -353,6 +353,22 @@ h1, h2, h3, h4, h5, h6 {
   left: 15px;
 }
 
+.info .info_item_basket .info_item_basket_number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  font-size: 12px;
+  font-family: "Muller Bold";
+  color: #484747;
+  line-height: 1.2;
+  text-align: center;
+  top: 70px;
+  left: 31px;
+  padding-top: 8px;
+}
+
 /*----------------FOOTER-------------------------------------------------------------------------*/
 .footer {
   width: 100%;
