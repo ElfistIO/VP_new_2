@@ -500,14 +500,32 @@ h1, h2, h3, h4, h5, h6 {
       flex-wrap: wrap;
 }
 
+@media (max-width: 1140px) {
+  .slider__container {
+    justify-content: center;
+  }
+  
+}
+
 .slider__main {
   position: relative;
   max-width: 750px;
 }
 
+@media (max-width: 775px) {
+  .slider__main {
+    max-width: 550px;
+  }
+}
+
 .slider__main img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 775px) {
+  .slider__main img {
+    max-width: 550px;
+  }
 }
 
 .slider__content {
@@ -515,6 +533,12 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   padding: 38px 45px;
+}
+
+@media (max-width: 775px) {
+  .slider__content {
+    padding: 20px 45px;
+  }
 }
 
 .slider__item {
@@ -531,12 +555,26 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 30px;
   margin-bottom: 16px;
 }
+@media (max-width: 775px) {
+  .slider__title {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+}
 
 .slider_text {
   font-family: "Segoe UI";
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 45px;
+}
+
+@media (max-width: 775px) {
+  .slider__text {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .slider__button {
@@ -556,6 +594,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 19px 0px;
 }
 
+@media (max-width: 775px) {
+  .slider__button {
+    font-size: 10px;
+    width: 100px;
+    height: 35px;
+    padding: 10px 0;
+  }
+}
+
 .previous,
 .next {
   cursor: pointer;
@@ -572,6 +619,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0 100% 100% 0 / 0 50% 50% 0;
 }
 
+@media (max-width: 775px) {
+  .previous,
+  .next {
+    top: 100px;
+  }
+}
+
 .next {
   right: 0;
   border-radius: 100% 0 0 100% / 50% 0 0 50%;
@@ -584,7 +638,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #40ced2;
 }
 
-.item {
+.slider__item {
   -webkit-animation-name: fade;
           animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -609,6 +663,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 1140px) {
+  .slider__info {
+    margin: 20px 0px 20px 0px;
+  }
+}
 .vacctination {
   position: relative;
 }
