@@ -303,6 +303,62 @@ $width-site: 1170px;
   }
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  .top_header {
+    margin-bottom: 20px;
+  }
+  .menu {
+    margin: 0 !important;
+  }
+  .menu_dot:nth-child(4) {
+    display: none;
+  }
+  .menu_dot:nth-child(8) {
+    display: none;
+  }
+  .menu_dot:nth-child(12) {
+    display: none;
+  }
+  .info:not(.info_item_basket) {
+    flex-flow: wrap;
+    .info_item_logo_img {
+      display: none;
+    }
+    .info_item_logo_text {
+      display: none;
+    }
+    .info_item_search {
+      width: 220px;
+      margin-left: 10px;
+    }
+    .info_item_city {
+      margin: 0 10px;
+    }
+    .info_item_phone {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      padding-top: 0;
+      .phone {
+        margin-top: 5px;
+      }
+      .info_item_phone_text {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        font-family: "Muller Ultra Light";
+        color: rgb(72, 71, 71);
+        margin-right: 10px;
+      }
+      .info_item_phone_text span {
+        font-size: 30px;
+        font-family: "Muller Ultra Light";
+        color: rgb(72, 71, 71);
+      }
+    }
+  }
+}
+
 /*----------------FOOTER-------------------------------------------------------------------------*/
 .footer {
   width: 100%;
