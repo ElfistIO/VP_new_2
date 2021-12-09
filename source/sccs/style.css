@@ -940,24 +940,97 @@ h1, h2, h3, h4, h5, h6 {
 /*------------CARD---------------------*/
 
 .products__row {
-}
-.product__card {
+  display: flex;
+  margin-bottom: 34px;
+  justify-content: space-between;
 }
 .card {
   width: 263px;
-  height: 391px;  
+  height: 391px;
+  border-radius: 4px;
 }
-.card__content {
-  margin: 0px auto; 
+.card:hover {
+  box-shadow: 11px 11px 8px 0px rgba(68, 227, 227, 0.5);
 }
-.card__image {
-  margin: 0px auto;
+.card {
+  position: relative;
+  flex: 0 1 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Muller Medium";
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  padding: 0px 45px 34px 45px;
+  transition: 1s;
 }
+.card__image  {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__action {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.card__action img {
+  display: block;
+}
+.card__action img:nth-child(2){
+  margin-top: -30px;
+}
+
 .card__name {
+  margin-top: 15px;
+  font-family: "Segoe UI";
+  font-weight: 300;
+  font-size: 14px;
+  color: #a7a7a7;
+  letter-spacing: 1.4px;  
 }
 .card__info {
+  margin-top: 8px;
+  color: #4e4e4e;
+  font-size: 14px;
 }
 .card__price {
+  margin-top: 15px;
+  font-size: 22px;
+  color: #40ced2;
+  
 }
 .card__button {
+  margin-top: 15px;
+  position: relative;
+  width: 176px;
+  height: 47px;
+  border-radius: 4px;
+  background-color: #40ced2;
+  letter-spacing: 1.4px;
+  color: #ffffff;
+  font-family: "Muller Medium";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 17px 0px 17px 21px;
+  display: flex;
+}
+.card__button img {
+  position: absolute;
+  bottom: 16px;
+  right: 24px;
+}
+
+.card__button:hover {
+  background: #32a3a6;
 }
