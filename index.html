@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ветпрактика</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="source/sccs/style.css">
 </head>
 <body>
@@ -193,70 +194,137 @@
                     <div class="products__title">
                         <span class="popular">Популярные товары</span><span class="menu_dot"></span><span class="new">Новинки</span>
                     </div>
-                    <div class="products__row">
-                        <div class="product__card card">
-                            <div class="card__action">
-                                <img src="img/main/cards/action.png" alt="">
-                                <img src="img/main/cards/new.png" alt="">
+                    <div class="swiper-container container">
+                        <div class="products__row swiper-wrapper">
+                            <div class="product__card card swiper-slide">
+                                <div class="card__action">
+                                    <img src="img/main/cards/action.png" alt="">
+                                    <img src="img/main/cards/new.png" alt="">
+                                </div>
+                                <div class="card__image">
+                                    <img src="img/main/cards/card_1.png" alt="">
+                                </div>                                
+                                <div class="card__name">Для собак и кошек</div>
+                                <div class="card__info">Odorgone gold animal
+                                                        для животных 200 мл</div>
+                                <div class="card__price">1 500 руб.</div>
+                                <a href="" class="card__button">
+                                    <span>в корзину</span>
+                                    <img src="img/main/cards/Basket.png" alt="">
+                                </a>
                             </div>
-                            <div class="card__image">
-                                <img src="img/main/cards/card_1.png" alt="">
-                            </div>                                
-                            <div class="card__name">Для собак и кошек</div>
-                            <div class="card__info">Odorgone gold animal
-                                                    для животных 200 мл</div>
-                            <div class="card__price">1 500 руб.</div>
-                            <a href="" class="card__button">
-                                <span>в корзину</span>
-                                <img src="img/main/cards/Basket.png" alt="">
-                            </a>
-                        </div>
-                        <div class="product__card card">
-                            <div class="card__action">
-                                <img src="img/main/cards/action.png" alt="">
+                            <div class="product__card card swiper-slide">
+                                <div class="card__action">
+                                    <img src="img/main/cards/action.png" alt="">
+                                </div>
+                                <div class="card__image">
+                                    <img src="img/main/cards/card_2.png" alt="">
+                                </div>                                
+                                <div class="card__name">Для рыбок</div>
+                                <div class="card__info">Лампа для аквариума
+                                                    Hagen Flora Glo</div>
+                                <div class="card__price">14 200 руб..</div>
+                                <a href="" class="card__button">
+                                    <span>в корзину</span>
+                                    <img src="img/main/cards/Basket.png" alt="">
+                                </a>
                             </div>
-                            <div class="card__image">
-                                <img src="img/main/cards/card_2.png" alt="">
-                            </div>                                
-                            <div class="card__name">Для рыбок</div>
-                            <div class="card__info">Лампа для аквариума
-                                                Hagen Flora Glo</div>
-                            <div class="card__price">14 200 руб..</div>
-                            <a href="" class="card__button">
-                                <span>в корзину</span>
-                                <img src="img/main/cards/Basket.png" alt="">
-                            </a>
-                        </div>
-                        <div class="product__card card">
-                            <div class="card__image">
-                                <img src="img/main/cards/card_3.png" alt="">
-                            </div>                                
-                            <div class="card__name">Для собак</div>
-                            <div class="card__info">Trixie - ошейник
-                                                мигающий для собак</div>
-                            <div class="card__price">2 550 руб.</div>
-                            <a href="" class="card__button">
-                                <span>в корзину</span>
-                                <img src="img/main/cards/Basket.png" alt="">
-                            </a>
-                        </div>
-                        <div class="product__card card">
-                            <div class="card__action">
-                                <img src="img/main/cards/new.png" alt="">
+                            <div class="product__card card swiper-slide">
+                                <div class="card__image">
+                                    <img src="img/main/cards/card_3.png" alt="">
+                                </div>                                
+                                <div class="card__name">Для собак</div>
+                                <div class="card__info">Trixie - ошейник
+                                                    мигающий для собак</div>
+                                <div class="card__price">2 550 руб.</div>
+                                <a href="" class="card__button">
+                                    <span>в корзину</span>
+                                    <img src="img/main/cards/Basket.png" alt="">
+                                </a>
                             </div>
-                            <div class="card__image">
-                                <img src="img/main/cards/card_4.png" alt="">
-                            </div>                                
-                            <div class="card__name">Для птиц</div>
-                            <div class="card__info">ДАРЭЛЛ Скворечник
-                                                    деревянный 20*23*28 *2</div>
-                            <div class="card__price">от 3 480 руб.</div>
-                            <a href="" class="card__button">
-                                <span>в корзину</span>
-                                <img src="img/main/cards/Basket.png" alt="">
-                            </a>
+                            <div class="product__card card swiper-slide">
+                                <div class="card__action">
+                                    <img src="img/main/cards/new.png" alt="">
+                                </div>
+                                <div class="card__image">
+                                    <img src="img/main/cards/card_4.png" alt="">
+                                </div>                                
+                                <div class="card__name">Для птиц</div>
+                                <div class="card__info">ДАРЭЛЛ Скворечник
+                                                        деревянный 20*23*28 *2</div>
+                                <div class="card__price">от 3 480 руб.</div>
+                                <a href="" class="card__button">
+                                    <span>в корзину</span>
+                                    <img src="img/main/cards/Basket.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product__card card swiper-slide">
+                                <div class="card__action">
+                                    <img src="img/main/cards/action.png" alt="">
+                                    <img src="img/main/cards/new.png" alt="">
+                                </div>
+                                <div class="card__image">
+                                    <img src="img/main/cards/card_1.png" alt="">
+                                </div>                                
+                                <div class="card__name">Для собак и кошек</div>
+                                <div class="card__info">Odorgone gold animal
+                                                        для животных 200 мл</div>
+                                <div class="card__price">1 500 руб.</div>
+                                <a href="" class="card__button">
+                                    <span>в корзину</span>
+                                    <img src="img/main/cards/Basket.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product__card card swiper-slide">
+                                <div class="card__action">
+                                    <img src="img/main/cards/action.png" alt="">
+                                </div>
+                                <div class="card__image">
+                                    <img src="img/main/cards/card_2.png" alt="">
+                                </div>                                
+                                <div class="card__name">Для рыбок</div>
+                                <div class="card__info">Лампа для аквариума
+                                                    Hagen Flora Glo</div>
+                                <div class="card__price">14 200 руб..</div>
+                                <a href="" class="card__button">
+                                    <span>в корзину</span>
+                                    <img src="img/main/cards/Basket.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product__card card swiper-slide">
+                                <div class="card__image">
+                                    <img src="img/main/cards/card_3.png" alt="">
+                                </div>                                
+                                <div class="card__name">Для собак</div>
+                                <div class="card__info">Trixie - ошейник
+                                                    мигающий для собак</div>
+                                <div class="card__price">2 550 руб.</div>
+                                <a href="" class="card__button">
+                                    <span>в корзину</span>
+                                    <img src="img/main/cards/Basket.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product__card card swiper-slide">
+                                <div class="card__action">
+                                    <img src="img/main/cards/new.png" alt="">
+                                </div>
+                                <div class="card__image">
+                                    <img src="img/main/cards/card_4.png" alt="">
+                                </div>                                
+                                <div class="card__name">Для птиц</div>
+                                <div class="card__info">ДАРЭЛЛ Скворечник
+                                                        деревянный 20*23*28 *2</div>
+                                <div class="card__price">от 3 480 руб.</div>
+                                <a href="" class="card__button">
+                                    <span>в корзину</span>
+                                    <img src="img/main/cards/Basket.png" alt="">
+                                </a>
+                            </div>
                         </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
+                    
                 </div>
             </div>
         </main>
@@ -336,6 +404,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
