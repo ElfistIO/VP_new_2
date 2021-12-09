@@ -940,7 +940,13 @@ h1, h2, h3, h4, h5, h6 {
 /*------------CARD---------------------*/
 
 .products__row {
-  margin-bottom: 34px;  
+  margin-bottom: 34px;
+  display: flex;
+  min-width: 0;
+  
+}
+.swiper-container {
+  overflow: hidden;
 }
 .card {
   width: 263px;
@@ -1043,9 +1049,9 @@ h1, h2, h3, h4, h5, h6 {
   top: 45%;
 }
 .swiper-button-prev {
-  left: -30px;
+  left: 0;
 }
 
 .swiper-button-next {
-  right: -30px;
+  right: 0;
 }
