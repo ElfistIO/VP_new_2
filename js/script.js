@@ -39,3 +39,13 @@ function showSlides(n) {
     /* Делаем элемент блочным: */
     slides[slideIndex - 1].style.display = "block";    
 }
+
+new Swiper('.swiper-container', {
+    // стрелки
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    slidesPerView: 1,
+});

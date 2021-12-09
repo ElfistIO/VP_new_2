@@ -940,9 +940,7 @@ h1, h2, h3, h4, h5, h6 {
 /*------------CARD---------------------*/
 
 .products__row {
-  display: flex;
-  margin-bottom: 34px;
-  justify-content: space-between;
+  margin-bottom: 34px;  
 }
 .card {
   width: 263px;
@@ -1033,4 +1031,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .card__button:hover {
   background: #32a3a6;
+}
+
+
+.swiper-container {
+  position: relative;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 45%;
+}
+.swiper-button-prev {
+  left: -30px;
+}
+
+.swiper-button-next {
+  right: -30px;
 }
