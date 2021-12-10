@@ -331,6 +331,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .info .info_item_basket .info_item_basket_back {
   background-color: #40ced2;
+  -webkit-box-shadow: 0px 10px 25px 0px rgba(64, 206, 210, 0.2);
+          box-shadow: 0px 10px 25px 0px rgba(64, 206, 210, 0.2);
   border-radius: 0 0 5px 5px;
   width: 68px;
   height: 122px;
@@ -520,6 +522,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
   margin-top: 48px;
+  margin-bottom: 48px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -532,7 +535,6 @@ h1, h2, h3, h4, h5, h6 {
   border-width: 1px;
   border-color: #e1f4f5;
   border-radius: 4px;
-  background-color: white;
   -webkit-box-shadow: 0px 10px 25px 0px rgba(167, 167, 167, 0.2);
           box-shadow: 0px 10px 25px 0px rgba(167, 167, 167, 0.2);
   width: 151px;
@@ -545,7 +547,6 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  margin-bottom: 15px;
 }
 
 .categories .categories_item .categories_item_text {
@@ -582,6 +583,73 @@ h1, h2, h3, h4, h5, h6 {
 .categories_link:hover .categories_item .categories_item_img {
   -webkit-filter: invert(100%);
           filter: invert(100%);
+}
+
+/*----------------ABOUT--------------------------------------------------------------------------*/
+.about {
+  text-align: center;
+  margin: 75px 0;
+}
+
+.about .about_header {
+  margin-bottom: 24px;
+  font-size: 22px;
+  font-family: "Muller Medium";
+  color: #4e4e4e;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.about .about_text {
+  font-size: 16px;
+  font-family: "Segoe UI";
+  color: #adadad;
+  line-height: 1.2;
+  padding: 0 40px;
+  margin-bottom: 24px;
+}
+
+.about .about_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .about_box .about_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.about .about_box .about_item .about_item_number {
+  font-size: 98px;
+  font-family: "Muller Bold";
+  color: rgba(78, 78, 78, 0);
+  line-height: 1.2;
+  text-align: left;
+  text-shadow: 0px 10px 25px rgba(81, 81, 81, 0.11);
+  margin-right: 25px;
+  z-index: 1;
+}
+
+.about .about_box .about_item .about_item_number_back {
+  position: absolute;
+  left: -22px;
+  height: 160px;
+  width: 160px;
+  z-index: 0;
+}
+
+.about .about_box .about_item .about_item_text {
+  font-size: 13.708px;
+  font-family: "Muller Medium";
+  color: #4e4e4e;
+  line-height: 1.2;
+  text-align: left;
 }
 
 /*----------------FOOTER-------------------------------------------------------------------------*/
@@ -890,168 +958,3 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
-
-.products__title {
-  overflow: hidden;
-  text-align: center;
-  margin: 104px 0px 30px 0px;
-  font-family: "Muller Medium";
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  font-size: 22px;
-}
-.products__title span {
-  display: inline-block;
-  vertical-align: middle;
-}
-.products__title::after,
-.products__title::before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-  height: 1px;
-  background-color: #e0e0e0;
-  position: relative;
-}
-.products__title::before {
-  margin-left: -100%;
-  left: -14px;
-}
-.products__title::after {
-  margin-right: -100%;
-  right: -14px;
-}
-.popular {
-  color: #40ced2;
-}
-.new {
-  color: #4e4e4e;
-}
-.products__title .menu_dot {
-  width: 3px;
-  height: 4px;
-  background-color: #e0e0e0;
-  margin: 0px 20px 0px 20px;
-}
-
-/*------------CARD---------------------*/
-
-.products__row {
-  margin-bottom: 34px;
-  display: flex;
-  min-width: 0;
-  
-}
-.swiper-container {
-  overflow: hidden;
-}
-.card {
-  width: 263px;
-  height: 391px;
-  border-radius: 4px;
-}
-.card:hover {
-  box-shadow: 11px 11px 8px 0px rgba(68, 227, 227, 0.5);
-}
-.card {
-  position: relative;
-  flex: 0 1 24%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Muller Medium";
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  text-align: center;
-  padding: 0px 45px 34px 45px;
-  transition: 1s;
-}
-.card__image  {
-  flex: 1 1 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card__action {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.card__action img {
-  display: block;
-}
-.card__action img:nth-child(2){
-  margin-top: -30px;
-}
-
-.card__name {
-  margin-top: 15px;
-  font-family: "Segoe UI";
-  font-weight: 300;
-  font-size: 14px;
-  color: #a7a7a7;
-  letter-spacing: 1.4px;  
-}
-.card__info {
-  margin-top: 8px;
-  color: #4e4e4e;
-  font-size: 14px;
-}
-.card__price {
-  margin-top: 15px;
-  font-size: 22px;
-  color: #40ced2;
-  
-}
-.card__button {
-  margin-top: 15px;
-  position: relative;
-  width: 176px;
-  height: 47px;
-  border-radius: 4px;
-  background-color: #40ced2;
-  letter-spacing: 1.4px;
-  color: #ffffff;
-  font-family: "Muller Medium";
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 17px 0px 17px 21px;
-  display: flex;
-}
-.card__button img {
-  position: absolute;
-  bottom: 16px;
-  right: 24px;
-}
-
-.card__button:hover {
-  background: #32a3a6;
-}
-
-
-.swiper-container {
-  position: relative;
-}
-.swiper-button-prev,
-.swiper-button-next {
-  position: absolute;
-  top: 45%;
-}
-.swiper-button-prev {
-  left: 0;
-}
-
-.swiper-button-next {
-  right: 0;
-}
