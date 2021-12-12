@@ -958,6 +958,52 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
+
+.products__title {
+  overflow: hidden;
+  text-align: center;
+  margin: 104px 0px 30px 0px;
+  font-family: "Muller Medium";
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  font-size: 22px;
+}
+.products__title span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.products__title::after,
+.products__title::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  position: relative;
+}
+.products__title::before {
+  margin-left: -100%;
+  left: -14px;
+}
+.products__title::after {
+  margin-right: -100%;
+  right: -14px;
+}
+.popular {
+  color: #40ced2;
+}
+.new {
+  color: #4e4e4e;
+}
+.products__title .menu_dot {
+  width: 3px;
+  height: 4px;
+  background-color: #e0e0e0;
+  margin: 0px 20px 0px 20px;
+}
 .products__row {
   margin-bottom: 34px;
   display: flex;
